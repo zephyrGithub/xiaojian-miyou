@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="xiaojian-miyou:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="xiaojian-miyou.war">
+      <element id="artifact" artifact-name="xiaojian-miyou:war exploded" />
+    </root>
+  </artifact>
+</component>

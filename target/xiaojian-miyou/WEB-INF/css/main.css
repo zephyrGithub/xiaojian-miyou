@@ -1,0 +1,13 @@
+#way {
+    width: 602px;
+    height: 402px;
+    position: absolute;
+    top: -20px;
+    left: 60px;
+}
+
+#way .way_ul {
+    width: 572px;
+    height: 260px;
+    margin: 72px auto 0;
+}
