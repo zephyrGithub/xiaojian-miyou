@@ -1,0 +1,14 @@
+142578 DEBUG [2013-03-10 09:26:43]  Invoking afterPropertiesSet() on bean with name 'miyou/friends'
+142579 DEBUG [2013-03-10 09:26:43]  Rendering view [org.springframework.web.servlet.view.JstlView: name 'miyou/friends'; URL [/WEB-INF/pages/miyou/friends.jsp]] in DispatcherServlet with name 'miyou'
+142579 DEBUG [2013-03-10 09:26:43]  Added model object 'intimacyFriendList' of type [java.util.RandomAccessSubList] to request in view with name 'miyou/friends'
+142579 DEBUG [2013-03-10 09:26:43]  Added model object 'halfIntimacyFriendList' of type [java.util.RandomAccessSubList] to request in view with name 'miyou/friends'
+142586 DEBUG [2013-03-10 09:26:43]  Forwarding to resource [/WEB-INF/pages/miyou/friends.jsp] in InternalResourceView 'miyou/friends'
+142691 DEBUG [2013-03-10 09:26:43]  Successfully completed request
+142892 DEBUG [2013-03-10 09:26:43]  DispatcherServlet with name 'miyou' processing GET request for [/favicon.ico]
+142892 WARN  [2013-03-10 09:26:43]  No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'miyou'
+142894 DEBUG [2013-03-10 09:26:43]  Successfully completed request
+1197906 INFO  [2013-03-10 09:44:18]  Closing WebApplicationContext for namespace 'miyou-servlet': startup date [Sun Mar 10 09:24:20 CST 2013]; root of context hierarchy
+1197907 DEBUG [2013-03-10 09:44:18]  Returning cached instance of singleton bean 'lifecycleProcessor'
+1197907 INFO  [2013-03-10 09:44:18]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7da2467a: defining beans [recentMiyouController,RecentMiyouService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]; root of factory hierarchy
+1197907 DEBUG [2013-03-10 09:44:18]  Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+1197908 DEBUG [2013-03-10 09:44:18]  Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]

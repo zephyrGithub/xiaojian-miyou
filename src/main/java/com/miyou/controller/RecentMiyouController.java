@@ -22,17 +22,33 @@ import java.util.List;
 @Controller
 @RequestMapping("/miyou")
 public class RecentMiyouController {
+
+    private final int INTIMACY = 5; //亲密朋友
+
+    private final int HALFINTIMACY = 9; //半熟朋友
+
     @Autowired
     RecentMiyouService recentMiyouService;
 
 
     @RequestMapping(value = "/user")
-    public ModelAndView getIntimacyFriends(@RequestParam("id") String uid, HttpServletRequest request, HttpServletResponse response) {
+    public ModelAndView getIntimacyFriends(@RequestParam("uid") String uid, HttpServletRequest request, HttpServletResponse response) {
         ModelAndView modelAndView = new ModelAndView();
-        List<User> intimacyFriendList = recentMiyouService.getIntimacyFriends(uid);
+        String currentUserId = uid;
+        long start = System.currentTimeMillis();
+        List<User> friendList = recentMiyouService.getMutualFriendsByCount(currentUserId, INTIMACY + HALFINTIMACY);
+        System.out.println("耗费时间： "+(System.currentTimeMillis()-start));
+        List<User> intimacyFriendList = null;
+        List<User> halfIntimacyFriendList = null;
+        if (friendList != null) {
+            intimacyFriendList = friendList.subList(0, friendList.size() > INTIMACY ? INTIMACY : friendList.size());
+            if (friendList.size() > INTIMACY) {
+                halfIntimacyFriendList = friendList.subList(INTIMACY, friendList.size() > INTIMACY + HALFINTIMACY ? INTIMACY + HALFINTIMACY : friendList.size());
+            }
+        }
         modelAndView.addObject("intimacyFriendList", intimacyFriendList);
-
-        modelAndView.setViewName("miyou/get");
+        modelAndView.addObject("halfIntimacyFriendList", halfIntimacyFriendList);
+        modelAndView.setViewName("miyou/friends");
         return modelAndView;
     }
 

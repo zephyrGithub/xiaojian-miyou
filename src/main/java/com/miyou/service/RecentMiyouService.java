@@ -13,11 +13,6 @@ import java.util.List;
  */
 public interface RecentMiyouService {
 
-
-    public List<User> getIntimacyFriends(String currentUserId);
-
-
-    public List<User> getHalfIntimacyFriends(String currentUserId);
-
+    public List<User> getMutualFriendsByCount(String currentUserId, int count);
 
 }

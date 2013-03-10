@@ -15,16 +15,12 @@
 </head>
 <body>
 <div id="way" style="">
-    <ul  id="ul" class="way_ul" style="">
     <c:if test="${intimacyFriendList!=null}">
     <c:forEach var="intimacyFriend" items="${intimacyFriendList}">
-    <li style="">
-        <a href="" target="_blank">
-            <img alt="" style="" src="${intimacyFriend.profileImageUrl}">
-            <p><c:out value="${intimacyFriend.screenName}"/></p></a>
+    <p style="display: inline-block;"><a href="" target="_blank"><img alt="" style="" src="${intimacyFriend.profileImageUrl}"></p>
+    <p><c:out value="${intimacyFriend.screenName}"/></p></a>
     </c:forEach>
     </c:if>
-    </ul>
 </div>
 
 </body>
