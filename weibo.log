@@ -6,3 +6,405 @@
 225994 DEBUG [2013-03-11 00:38:11]  DispatcherServlet with name 'miyou' processing GET request for [/favicon.ico]
 225994 WARN  [2013-03-11 00:38:11]  No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'miyou'
 225994 DEBUG [2013-03-11 00:38:11]  Successfully completed request
+671048 INFO  [2013-03-11 00:45:37]  Closing WebApplicationContext for namespace 'miyou-servlet': startup date [Mon Mar 11 00:34:26 CST 2013]; root of context hierarchy
+671050 DEBUG [2013-03-11 00:45:37]  Returning cached instance of singleton bean 'lifecycleProcessor'
+671050 INFO  [2013-03-11 00:45:37]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2abb5859: defining beans [recentMiyouController,RecentMiyouService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]; root of factory hierarchy
+671050 DEBUG [2013-03-11 00:45:37]  Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+671051 DEBUG [2013-03-11 00:45:37]  Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+0    DEBUG [2013-03-11 00:48:06]  Initializing servlet 'miyou'
+19   INFO  [2013-03-11 00:48:06]  FrameworkServlet 'miyou': initialization started
+21   DEBUG [2013-03-11 00:48:06]  Servlet with name 'miyou' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [null]
+47   INFO  [2013-03-11 00:48:06]  Refreshing WebApplicationContext for namespace 'miyou-servlet': startup date [Mon Mar 11 00:48:06 CST 2013]; root of context hierarchy
+78   INFO  [2013-03-11 00:48:06]  Loading XML bean definitions from ServletContext resource [/WEB-INF/miyou-servlet.xml]
+79   DEBUG [2013-03-11 00:48:06]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+103  DEBUG [2013-03-11 00:48:06]  Loading schema mappings from [META-INF/spring.schemas]
+105  DEBUG [2013-03-11 00:48:06]  Loaded schema mappings: {http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd}
+105  DEBUG [2013-03-11 00:48:06]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+140  DEBUG [2013-03-11 00:48:06]  Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+147  DEBUG [2013-03-11 00:48:06]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+155  DEBUG [2013-03-11 00:48:06]  Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+165  DEBUG [2013-03-11 00:48:06]  Loading bean definitions
+178  DEBUG [2013-03-11 00:48:06]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+211  DEBUG [2013-03-11 00:48:06]  Looking for matching resources in directory tree [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou]
+211  DEBUG [2013-03-11 00:48:06]  Searching directory [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou] for files matching pattern [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/**/*.class]
+212  DEBUG [2013-03-11 00:48:06]  Searching directory [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/controller] for files matching pattern [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/**/*.class]
+214  DEBUG [2013-03-11 00:48:06]  Searching directory [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service] for files matching pattern [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/**/*.class]
+215  DEBUG [2013-03-11 00:48:06]  Searching directory [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl] for files matching pattern [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/**/*.class]
+217  DEBUG [2013-03-11 00:48:06]  Resolved location pattern [classpath*:com/miyou/**/*.class] to resources [file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/controller/RecentMiyouController.class], file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl/RecentMiyouServiceImp$1.class], file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl/RecentMiyouServiceImp$2.class], file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl/RecentMiyouServiceImp.class], file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/RecentMiyouService.class]]
+246  DEBUG [2013-03-11 00:48:06]  Identified candidate component class: file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/controller/RecentMiyouController.class]
+248  DEBUG [2013-03-11 00:48:06]  Identified candidate component class: file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl/RecentMiyouServiceImp.class]
+281  DEBUG [2013-03-11 00:48:06]  Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+282  DEBUG [2013-03-11 00:48:06]  Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]
+282  DEBUG [2013-03-11 00:48:06]  Loaded 12 bean definitions from location pattern [/WEB-INF/miyou-servlet.xml]
+282  DEBUG [2013-03-11 00:48:06]  Bean factory for WebApplicationContext for namespace 'miyou-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@4fe2fe5d: defining beans [recentMiyouController,RecentMiyouService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]; root of factory hierarchy
+296  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+296  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+300  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+301  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+331  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+332  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+332  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+332  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+333  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+333  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+333  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+333  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+333  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+333  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+337  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+337  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+339  DEBUG [2013-03-11 00:48:06]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@764b3f8b]
+340  DEBUG [2013-03-11 00:48:06]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@10db5b3f]
+342  DEBUG [2013-03-11 00:48:06]  Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@23dd246]
+342  INFO  [2013-03-11 00:48:06]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4fe2fe5d: defining beans [recentMiyouController,RecentMiyouService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]; root of factory hierarchy
+343  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'recentMiyouController'
+343  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'recentMiyouController'
+349  DEBUG [2013-03-11 00:48:06]  Found injected element on class [com.miyou.controller.RecentMiyouController]: AutowiredFieldElement for com.miyou.service.RecentMiyouService com.miyou.controller.RecentMiyouController.recentMiyouService
+350  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'recentMiyouController' to allow for resolving potential circular references
+356  DEBUG [2013-03-11 00:48:06]  Processing injected method of bean 'recentMiyouController': AutowiredFieldElement for com.miyou.service.RecentMiyouService com.miyou.controller.RecentMiyouController.recentMiyouService
+359  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'RecentMiyouService'
+359  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'RecentMiyouService'
+361  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'RecentMiyouService' to allow for resolving potential circular references
+364  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'RecentMiyouService'
+364  DEBUG [2013-03-11 00:48:06]  Autowiring by type from bean name 'recentMiyouController' to bean named 'RecentMiyouService'
+364  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'recentMiyouController'
+364  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'RecentMiyouService'
+364  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+364  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+365  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+365  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+365  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+365  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+367  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0' to allow for resolving potential circular references
+380  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+380  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+383  DEBUG [2013-03-11 00:48:06]  Creating instance of bean '(inner bean)'
+389  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+389  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+390  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+392  DEBUG [2013-03-11 00:48:06]  Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+407  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+412  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean '(inner bean)'
+418  DEBUG [2013-03-11 00:48:06]  No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+419  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+421  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+421  DEBUG [2013-03-11 00:48:06]  Looking for URL mappings in application context: WebApplicationContext for namespace 'miyou-servlet': startup date [Mon Mar 11 00:48:06 CST 2013]; root of context hierarchy
+424  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'recentMiyouController'
+424  INFO  [2013-03-11 00:48:06]  Mapped URL path [/miyou/user/{uid}] onto handler 'recentMiyouController'
+424  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'recentMiyouController'
+424  INFO  [2013-03-11 00:48:06]  Mapped URL path [/miyou/user/{uid}.*] onto handler 'recentMiyouController'
+424  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'recentMiyouController'
+424  INFO  [2013-03-11 00:48:06]  Mapped URL path [/miyou/user/{uid}/] onto handler 'recentMiyouController'
+425  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'RecentMiyouService': no URL paths identified
+425  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+425  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+426  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+426  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+426  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+426  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+426  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+426  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+426  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'systemProperties': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'systemEnvironment': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'servletContext': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'servletConfig': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'contextParameters': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'contextAttributes': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'messageSource': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Rejected bean name 'applicationEventMulticaster': no URL paths identified
+427  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+427  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+428  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+428  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+500  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+512  DEBUG [2013-03-11 00:48:06]  Creating instance of bean '(inner bean)#1'
+515  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+516  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean '(inner bean)#1'
+516  DEBUG [2013-03-11 00:48:06]  Creating instance of bean '(inner bean)#2'
+528  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean '(inner bean)#2'
+529  DEBUG [2013-03-11 00:48:06]  Creating instance of bean '(inner bean)#3'
+539  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean '(inner bean)#3'
+540  DEBUG [2013-03-11 00:48:06]  Creating instance of bean '(inner bean)#4'
+542  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean '(inner bean)#4'
+542  DEBUG [2013-03-11 00:48:06]  Creating instance of bean '(inner bean)#5'
+549  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean '(inner bean)#5'
+549  DEBUG [2013-03-11 00:48:06]  Creating instance of bean '(inner bean)#6'
+566  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean '(inner bean)#6'
+566  DEBUG [2013-03-11 00:48:06]  Creating instance of bean '(inner bean)#7'
+576  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean '(inner bean)#7'
+576  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+576  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+577  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+577  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+581  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+591  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+591  DEBUG [2013-03-11 00:48:06]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+591  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+592  DEBUG [2013-03-11 00:48:06]  Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0' to allow for resolving potential circular references
+594  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+595  DEBUG [2013-03-11 00:48:06]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@639d0cf0]
+595  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'lifecycleProcessor'
+596  DEBUG [2013-03-11 00:48:06]  Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+597  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+600  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+600  DEBUG [2013-03-11 00:48:06]  Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@f0fba68]
+601  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+606  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+606  DEBUG [2013-03-11 00:48:06]  Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@3685be9]
+606  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+606  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+606  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+608  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+622  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+622  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+627  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+628  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+632  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+633  DEBUG [2013-03-11 00:48:06]  No HandlerExceptionResolvers found in servlet 'miyou': using default
+633  DEBUG [2013-03-11 00:48:06]  Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+637  DEBUG [2013-03-11 00:48:06]  Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+637  DEBUG [2013-03-11 00:48:06]  Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@399c4364]
+637  DEBUG [2013-03-11 00:48:06]  Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+637  DEBUG [2013-03-11 00:48:06]  Published WebApplicationContext of servlet 'miyou' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.miyou]
+637  INFO  [2013-03-11 00:48:06]  FrameworkServlet 'miyou': initialization completed in 618 ms
+637  DEBUG [2013-03-11 00:48:06]  Servlet 'miyou' configured successfully
+1259 INFO  [2013-03-11 00:48:07]  Closing WebApplicationContext for namespace 'miyou-servlet': startup date [Mon Mar 11 00:48:06 CST 2013]; root of context hierarchy
+1259 DEBUG [2013-03-11 00:48:07]  Returning cached instance of singleton bean 'lifecycleProcessor'
+1259 INFO  [2013-03-11 00:48:07]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4fe2fe5d: defining beans [recentMiyouController,RecentMiyouService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]; root of factory hierarchy
+1259 DEBUG [2013-03-11 00:48:07]  Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+1260 DEBUG [2013-03-11 00:48:07]  Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]
+0    DEBUG [2013-03-11 00:48:15]  Initializing servlet 'miyou'
+20   INFO  [2013-03-11 00:48:15]  FrameworkServlet 'miyou': initialization started
+23   DEBUG [2013-03-11 00:48:15]  Servlet with name 'miyou' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [null]
+54   INFO  [2013-03-11 00:48:15]  Refreshing WebApplicationContext for namespace 'miyou-servlet': startup date [Mon Mar 11 00:48:15 CST 2013]; root of context hierarchy
+97   INFO  [2013-03-11 00:48:15]  Loading XML bean definitions from ServletContext resource [/WEB-INF/miyou-servlet.xml]
+99   DEBUG [2013-03-11 00:48:15]  Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+125  DEBUG [2013-03-11 00:48:15]  Loading schema mappings from [META-INF/spring.schemas]
+127  DEBUG [2013-03-11 00:48:15]  Loaded schema mappings: {http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd}
+127  DEBUG [2013-03-11 00:48:15]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+160  DEBUG [2013-03-11 00:48:16]  Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+166  DEBUG [2013-03-11 00:48:16]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+174  DEBUG [2013-03-11 00:48:16]  Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-3.0.xsd
+184  DEBUG [2013-03-11 00:48:16]  Loading bean definitions
+196  DEBUG [2013-03-11 00:48:16]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+222  DEBUG [2013-03-11 00:48:16]  Looking for matching resources in directory tree [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou]
+222  DEBUG [2013-03-11 00:48:16]  Searching directory [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou] for files matching pattern [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/**/*.class]
+224  DEBUG [2013-03-11 00:48:16]  Searching directory [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/controller] for files matching pattern [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/**/*.class]
+225  DEBUG [2013-03-11 00:48:16]  Searching directory [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service] for files matching pattern [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/**/*.class]
+225  DEBUG [2013-03-11 00:48:16]  Searching directory [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl] for files matching pattern [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/**/*.class]
+229  DEBUG [2013-03-11 00:48:16]  Resolved location pattern [classpath*:com/miyou/**/*.class] to resources [file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/controller/RecentMiyouController.class], file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl/RecentMiyouServiceImp$1.class], file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl/RecentMiyouServiceImp$2.class], file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl/RecentMiyouServiceImp.class], file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/RecentMiyouService.class]]
+260  DEBUG [2013-03-11 00:48:16]  Identified candidate component class: file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/controller/RecentMiyouController.class]
+262  DEBUG [2013-03-11 00:48:16]  Identified candidate component class: file [/Users/chenxiaojian/code/xiaojian-miyou/src/main/webapp/WEB-INF/classes/com/miyou/service/impl/RecentMiyouServiceImp.class]
+293  DEBUG [2013-03-11 00:48:16]  Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+294  DEBUG [2013-03-11 00:48:16]  Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]
+294  DEBUG [2013-03-11 00:48:16]  Loaded 12 bean definitions from location pattern [/WEB-INF/miyou-servlet.xml]
+294  DEBUG [2013-03-11 00:48:16]  Bean factory for WebApplicationContext for namespace 'miyou-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@2025b64d: defining beans [recentMiyouController,RecentMiyouService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]; root of factory hierarchy
+307  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+307  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+312  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+312  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+342  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+342  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+343  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+343  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+343  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+343  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+344  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+344  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+344  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+344  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+348  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+348  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+350  DEBUG [2013-03-11 00:48:16]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@40bf015]
+351  DEBUG [2013-03-11 00:48:16]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3bea817f]
+353  DEBUG [2013-03-11 00:48:16]  Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@7b93d2f2]
+354  INFO  [2013-03-11 00:48:16]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2025b64d: defining beans [recentMiyouController,RecentMiyouService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]; root of factory hierarchy
+354  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'recentMiyouController'
+354  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'recentMiyouController'
+362  DEBUG [2013-03-11 00:48:16]  Found injected element on class [com.miyou.controller.RecentMiyouController]: AutowiredFieldElement for com.miyou.service.RecentMiyouService com.miyou.controller.RecentMiyouController.recentMiyouService
+362  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'recentMiyouController' to allow for resolving potential circular references
+367  DEBUG [2013-03-11 00:48:16]  Processing injected method of bean 'recentMiyouController': AutowiredFieldElement for com.miyou.service.RecentMiyouService com.miyou.controller.RecentMiyouController.recentMiyouService
+369  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'RecentMiyouService'
+370  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'RecentMiyouService'
+371  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'RecentMiyouService' to allow for resolving potential circular references
+373  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'RecentMiyouService'
+374  DEBUG [2013-03-11 00:48:16]  Autowiring by type from bean name 'recentMiyouController' to bean named 'RecentMiyouService'
+374  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'recentMiyouController'
+374  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'RecentMiyouService'
+374  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+374  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+374  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+374  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+374  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+374  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+377  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0' to allow for resolving potential circular references
+390  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+390  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+393  DEBUG [2013-03-11 00:48:16]  Creating instance of bean '(inner bean)'
+399  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+399  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+399  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+402  DEBUG [2013-03-11 00:48:16]  Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+417  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+423  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean '(inner bean)'
+428  DEBUG [2013-03-11 00:48:16]  No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+429  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+431  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+431  DEBUG [2013-03-11 00:48:16]  Looking for URL mappings in application context: WebApplicationContext for namespace 'miyou-servlet': startup date [Mon Mar 11 00:48:15 CST 2013]; root of context hierarchy
+433  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'recentMiyouController'
+433  INFO  [2013-03-11 00:48:16]  Mapped URL path [/miyou/user/{uid}] onto handler 'recentMiyouController'
+433  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'recentMiyouController'
+434  INFO  [2013-03-11 00:48:16]  Mapped URL path [/miyou/user/{uid}.*] onto handler 'recentMiyouController'
+434  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'recentMiyouController'
+434  INFO  [2013-03-11 00:48:16]  Mapped URL path [/miyou/user/{uid}/] onto handler 'recentMiyouController'
+435  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'RecentMiyouService': no URL paths identified
+435  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+435  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+435  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+435  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+435  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'systemProperties': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'systemEnvironment': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'servletContext': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'servletConfig': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'contextParameters': no URL paths identified
+436  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'contextAttributes': no URL paths identified
+437  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'messageSource': no URL paths identified
+437  DEBUG [2013-03-11 00:48:16]  Rejected bean name 'applicationEventMulticaster': no URL paths identified
+437  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+437  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+437  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+437  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+511  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+520  DEBUG [2013-03-11 00:48:16]  Creating instance of bean '(inner bean)#1'
+523  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+523  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean '(inner bean)#1'
+524  DEBUG [2013-03-11 00:48:16]  Creating instance of bean '(inner bean)#2'
+539  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean '(inner bean)#2'
+540  DEBUG [2013-03-11 00:48:16]  Creating instance of bean '(inner bean)#3'
+554  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean '(inner bean)#3'
+554  DEBUG [2013-03-11 00:48:16]  Creating instance of bean '(inner bean)#4'
+556  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean '(inner bean)#4'
+557  DEBUG [2013-03-11 00:48:16]  Creating instance of bean '(inner bean)#5'
+565  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean '(inner bean)#5'
+565  DEBUG [2013-03-11 00:48:16]  Creating instance of bean '(inner bean)#6'
+583  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean '(inner bean)#6'
+583  DEBUG [2013-03-11 00:48:16]  Creating instance of bean '(inner bean)#7'
+594  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean '(inner bean)#7'
+594  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+594  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+594  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+594  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+598  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+606  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+606  DEBUG [2013-03-11 00:48:16]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+606  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+607  DEBUG [2013-03-11 00:48:16]  Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0' to allow for resolving potential circular references
+608  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+610  DEBUG [2013-03-11 00:48:16]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@246d12a9]
+610  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'lifecycleProcessor'
+611  DEBUG [2013-03-11 00:48:16]  Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+612  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+615  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+615  DEBUG [2013-03-11 00:48:16]  Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@11652e61]
+616  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+619  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+619  DEBUG [2013-03-11 00:48:16]  Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@7bcf6f61]
+619  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0'
+620  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+620  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0'
+621  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+636  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+637  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+640  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+640  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+645  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+645  DEBUG [2013-03-11 00:48:16]  No HandlerExceptionResolvers found in servlet 'miyou': using default
+645  DEBUG [2013-03-11 00:48:16]  Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+648  DEBUG [2013-03-11 00:48:16]  Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+648  DEBUG [2013-03-11 00:48:16]  Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@46c1dc0b]
+648  DEBUG [2013-03-11 00:48:16]  Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+648  DEBUG [2013-03-11 00:48:16]  Published WebApplicationContext of servlet 'miyou' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.miyou]
+648  INFO  [2013-03-11 00:48:16]  FrameworkServlet 'miyou': initialization completed in 627 ms
+648  DEBUG [2013-03-11 00:48:16]  Servlet 'miyou' configured successfully
+33947 DEBUG [2013-03-11 00:48:49]  DispatcherServlet with name 'miyou' processing GET request for [/miyou/user/1667171020]
+33948 DEBUG [2013-03-11 00:48:49]  Matching patterns for request [/miyou/user/1667171020] are [/miyou/user/{uid}]
+33949 DEBUG [2013-03-11 00:48:49]  URI Template variables for request [/miyou/user/1667171020] are {uid=1667171020}
+33951 DEBUG [2013-03-11 00:48:49]  Mapping [/miyou/user/1667171020] to HandlerExecutionChain with handler [com.miyou.controller.RecentMiyouController@6406aade] and 3 interceptors
+33953 DEBUG [2013-03-11 00:48:49]  Last-Modified value for [/miyou/user/1667171020] is: -1
+33975 DEBUG [2013-03-11 00:48:49]  Converting value '1667171020' of java.lang.String to @org.springframework.web.bind.annotation.PathVariable java.lang.String
+33976 DEBUG [2013-03-11 00:48:49]  Converted to '1667171020'
+33977 DEBUG [2013-03-11 00:48:49]  Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.miyou.controller.RecentMiyouController.getIntimacyFriends(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+34005 DEBUG [2013-03-11 00:48:49]  Request:
+34006 DEBUG [2013-03-11 00:48:49]  GET:https://api.weibo.com/2/friendships/friends/bilateral.json
+34022 DEBUG [2013-03-11 00:48:49]  Authorization: OAuth2 2.00K2RpoB0ysgCmeb17074e77T5_slC
+34022 DEBUG [2013-03-11 00:48:49]  API-RemoteIP: 10.1.224.90
+34390 DEBUG [2013-03-11 00:48:50]  Response:
+34390 DEBUG [2013-03-11 00:48:50]  https StatusCode:403
+34390 DEBUG [2013-03-11 00:48:50]  Server:nginx/1.2.0
+34390 DEBUG [2013-03-11 00:48:50]  Date:Sun, 10 Mar 2013 16:48:50 GMT
+34390 DEBUG [2013-03-11 00:48:50]  Content-Type:application/json;charset=UTF-8
+34390 DEBUG [2013-03-11 00:48:50]  Content-Length:113
+34390 DEBUG [2013-03-11 00:48:50]  Connection:keep-alive
+34390 DEBUG [2013-03-11 00:48:50]  Api-Server-IP:10.77.108.50
+34390 DEBUG [2013-03-11 00:48:50]  Vary:Accept-Encoding
+34391 DEBUG [2013-03-11 00:48:50]  X-Varnish:2551902112
+34391 DEBUG [2013-03-11 00:48:50]  Age:0
+34391 DEBUG [2013-03-11 00:48:50]  Via:1.1 varnish
+34393 DEBUG [2013-03-11 00:48:50]  {"error":"User requests out of rate limit!","error_code":10023,"request":"/2/friendships/friends/bilateral.json"}
+
+34401 DEBUG [2013-03-11 00:48:50]  Invoking afterPropertiesSet() on bean with name 'miyou/friends'
+34401 DEBUG [2013-03-11 00:48:50]  Rendering view [org.springframework.web.servlet.view.JstlView: name 'miyou/friends'; URL [/WEB-INF/pages/miyou/friends.jsp]] in DispatcherServlet with name 'miyou'
+34401 DEBUG [2013-03-11 00:48:50]  Removed model object 'intimacyFriendList' from request in view with name 'miyou/friends'
+34402 DEBUG [2013-03-11 00:48:50]  Removed model object 'halfIntimacyFriendList' from request in view with name 'miyou/friends'
+34406 DEBUG [2013-03-11 00:48:50]  Forwarding to resource [/WEB-INF/pages/miyou/friends.jsp] in InternalResourceView 'miyou/friends'
+34480 DEBUG [2013-03-11 00:48:50]  Successfully completed request
+34656 DEBUG [2013-03-11 00:48:50]  DispatcherServlet with name 'miyou' processing GET request for [/favicon.ico]
+34656 WARN  [2013-03-11 00:48:50]  No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'miyou'
+34658 DEBUG [2013-03-11 00:48:50]  Successfully completed request
+39986 DEBUG [2013-03-11 00:48:55]  DispatcherServlet with name 'miyou' processing GET request for [/miyou/user/1667171020]
+39986 DEBUG [2013-03-11 00:48:55]  Matching patterns for request [/miyou/user/1667171020] are [/miyou/user/{uid}]
+39987 DEBUG [2013-03-11 00:48:55]  URI Template variables for request [/miyou/user/1667171020] are {uid=1667171020}
+39987 DEBUG [2013-03-11 00:48:55]  Mapping [/miyou/user/1667171020] to HandlerExecutionChain with handler [com.miyou.controller.RecentMiyouController@6406aade] and 3 interceptors
+39987 DEBUG [2013-03-11 00:48:55]  Last-Modified value for [/miyou/user/1667171020] is: -1
+39988 DEBUG [2013-03-11 00:48:55]  Converting value '1667171020' of java.lang.String to @org.springframework.web.bind.annotation.PathVariable java.lang.String
+39988 DEBUG [2013-03-11 00:48:55]  Converted to '1667171020'
+39989 DEBUG [2013-03-11 00:48:55]  Invoking request handler method: public org.springframework.web.servlet.ModelAndView com.miyou.controller.RecentMiyouController.getIntimacyFriends(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+39989 DEBUG [2013-03-11 00:48:55]  Request:
+39989 DEBUG [2013-03-11 00:48:55]  GET:https://api.weibo.com/2/friendships/friends/bilateral.json
+39989 DEBUG [2013-03-11 00:48:55]  Authorization: OAuth2 2.00K2RpoB0ysgCmeb17074e77T5_slC
+39990 DEBUG [2013-03-11 00:48:55]  API-RemoteIP: 10.1.224.90
+40018 DEBUG [2013-03-11 00:48:55]  Response:
+40018 DEBUG [2013-03-11 00:48:55]  https StatusCode:403
+40018 DEBUG [2013-03-11 00:48:55]  Server:nginx/1.2.0
+40018 DEBUG [2013-03-11 00:48:55]  Date:Sun, 10 Mar 2013 16:48:56 GMT
+40018 DEBUG [2013-03-11 00:48:55]  Content-Type:application/json;charset=UTF-8
+40018 DEBUG [2013-03-11 00:48:55]  Content-Length:113
+40018 DEBUG [2013-03-11 00:48:55]  Connection:keep-alive
+40019 DEBUG [2013-03-11 00:48:55]  Api-Server-IP:10.77.108.44
+40019 DEBUG [2013-03-11 00:48:55]  Vary:Accept-Encoding
+40019 DEBUG [2013-03-11 00:48:55]  X-Varnish:3328627527
+40019 DEBUG [2013-03-11 00:48:55]  Age:0
+40019 DEBUG [2013-03-11 00:48:55]  Via:1.1 varnish
+40019 DEBUG [2013-03-11 00:48:55]  {"error":"User requests out of rate limit!","error_code":10023,"request":"/2/friendships/friends/bilateral.json"}
+
+40021 DEBUG [2013-03-11 00:48:55]  Rendering view [org.springframework.web.servlet.view.JstlView: name 'miyou/friends'; URL [/WEB-INF/pages/miyou/friends.jsp]] in DispatcherServlet with name 'miyou'
+40021 DEBUG [2013-03-11 00:48:55]  Removed model object 'intimacyFriendList' from request in view with name 'miyou/friends'
+40021 DEBUG [2013-03-11 00:48:55]  Removed model object 'halfIntimacyFriendList' from request in view with name 'miyou/friends'
+40021 DEBUG [2013-03-11 00:48:55]  Forwarding to resource [/WEB-INF/pages/miyou/friends.jsp] in InternalResourceView 'miyou/friends'
+40022 DEBUG [2013-03-11 00:48:55]  Successfully completed request
+40233 DEBUG [2013-03-11 00:48:56]  DispatcherServlet with name 'miyou' processing GET request for [/favicon.ico]
+40233 WARN  [2013-03-11 00:48:56]  No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'miyou'
+40234 DEBUG [2013-03-11 00:48:56]  Successfully completed request
+45459 INFO  [2013-03-11 00:49:01]  Closing WebApplicationContext for namespace 'miyou-servlet': startup date [Mon Mar 11 00:48:15 CST 2013]; root of context hierarchy
+45460 DEBUG [2013-03-11 00:49:01]  Returning cached instance of singleton bean 'lifecycleProcessor'
+45460 INFO  [2013-03-11 00:49:01]  Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2025b64d: defining beans [recentMiyouController,RecentMiyouService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter#0]; root of factory hierarchy
+45460 DEBUG [2013-03-11 00:49:01]  Retrieved dependent beans for bean '(inner bean)#1': [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+45461 DEBUG [2013-03-11 00:49:01]  Retrieved dependent beans for bean '(inner bean)': [org.springframework.web.servlet.handler.MappedInterceptor#0]

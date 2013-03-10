@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weibo.log.1" afterPath="" />
+    <list default="true" id="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" name="Default" comment="optimized">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/miyou/service/impl/RecentMiyouServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/com/miyou/service/impl/RecentMiyouServiceImp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weibo.log" afterPath="$PROJECT_DIR$/weibo.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="xiaojian-miyou.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362928810941" ignored="false" />
+    <file path="/Dummy.txt" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362934147435" ignored="false" />
     <file path="/RecentMiyouService.java" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362764913749" ignored="false" />
     <file path="$PROJECT_DIR$/../weibo4j-oauth2/pom.xml" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362759978123" ignored="false" />
     <file path="/pom.xml" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362816546553" ignored="false" />
@@ -25,7 +24,7 @@
     <file path="$USER_HOME$/Desktop/weibo4j-oauth2/src/main/java/weibo4j/Users.java" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362760556922" ignored="false" />
     <file path="/a.dummy" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362932249069" ignored="false" />
     <file path="/web.xml" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362816730401" ignored="false" />
-    <file path="/RecentMiyouServiceImp.java" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362932179091" ignored="false" />
+    <file path="/RecentMiyouServiceImp.java" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362934065759" ignored="false" />
     <file path="$USER_HOME$/Desktop/weibo4j-oauth2/src/test/java/examples/tags/CreateTags.java" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362762723208" ignored="false" />
     <file path="$USER_HOME$/Desktop/weibo4j-oauth2/src/test/java/examples/tags/DestroyTag.java" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362762711087" ignored="false" />
     <file path="$USER_HOME$/Desktop/weibo4j-oauth2/src/test/java/examples/tags/DestroyTagsBatch.java" changelist="79c5e798-4185-4a95-b2d2-2cbc4ac449f8" time="1362762711087" ignored="false" />
@@ -345,15 +344,15 @@
       <file leaf-file-name="RecentMiyouServiceImp.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/miyou/service/impl/RecentMiyouServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="73" selection-start="895" selection-end="895" vertical-scroll-proportion="0.8111111">
+            <state line="47" column="63" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.32777777">
               <folding>
-                <element signature="e#1757#1783#0" expanded="true" />
-                <element signature="e#1896#2145#0" expanded="true" />
-                <element signature="e#2130#2131#0" expanded="true" />
-                <element signature="e#2219#2225#0" expanded="true" />
-                <element signature="e#2809#2824#0" expanded="true" />
-                <element signature="e#3267#4085#0" expanded="true" />
-                <element signature="e#4070#4071#0" expanded="true" />
+                <element signature="e#1806#1832#0" expanded="true" />
+                <element signature="e#1945#2194#0" expanded="true" />
+                <element signature="e#2179#2180#0" expanded="true" />
+                <element signature="e#2268#2274#0" expanded="true" />
+                <element signature="e#2858#2873#0" expanded="true" />
+                <element signature="e#3316#4134#0" expanded="true" />
+                <element signature="e#4119#4120#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1174,15 +1173,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/miyou/service/impl/RecentMiyouServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="73" selection-start="895" selection-end="895" vertical-scroll-proportion="0.8111111">
+        <state line="47" column="63" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.32777777">
           <folding>
-            <element signature="e#1757#1783#0" expanded="true" />
-            <element signature="e#1896#2145#0" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2219#2225#0" expanded="true" />
-            <element signature="e#2809#2824#0" expanded="true" />
-            <element signature="e#3267#4085#0" expanded="true" />
-            <element signature="e#4070#4071#0" expanded="true" />
+            <element signature="e#1806#1832#0" expanded="true" />
+            <element signature="e#1945#2194#0" expanded="true" />
+            <element signature="e#2179#2180#0" expanded="true" />
+            <element signature="e#2268#2274#0" expanded="true" />
+            <element signature="e#2858#2873#0" expanded="true" />
+            <element signature="e#3316#4134#0" expanded="true" />
+            <element signature="e#4119#4120#0" expanded="true" />
           </folding>
         </state>
       </provider>

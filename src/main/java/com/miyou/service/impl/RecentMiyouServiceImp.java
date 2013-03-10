@@ -47,6 +47,7 @@ public class RecentMiyouServiceImp implements RecentMiyouService {
 
             long start = System.currentTimeMillis();
             Map<User, Integer> friendMapping = getFriendMapping(currentUserId, userWapper.getUsers());
+            if(friendMapping==null) return null;
             System.out.println("takes time: "+(System.currentTimeMillis()-start)+" ms");
             Set<Map.Entry<User, Integer>> entry = friendMapping.entrySet();
             List<Map.Entry<User, Integer>> totalMutualFriend = new ArrayList<Map.Entry<User, Integer>>(entry);
