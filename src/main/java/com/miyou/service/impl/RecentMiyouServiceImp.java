@@ -24,7 +24,7 @@ import java.util.concurrent.*;
 public class RecentMiyouServiceImp implements RecentMiyouService {
     //2.00000xCq0lQxAK7287214febicBx3B
     //2.00K2RpoBUfU9QB7d8acaec42Ap9LlB
-    private final String ACCESS_TOKEN = "2.00K2RpoBUfU9QB7d8acaec42Ap9LlB";
+    private final String ACCESS_TOKEN = "2.00000xCq0lQxAK7287214febicBx3B";
 
     private final int DEFAULT_COUNT = 150;//是用新浪微博API批量接口，默认最多150条
 
