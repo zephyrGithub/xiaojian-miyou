@@ -25,3 +25,5 @@ RecentMiyouServiceImp.java中留了有多个测试用的accesstoken，因为是�
     //2.00K2RpoBRGtvLD25849cb97dXFzZcD
     //2.00K2RpoB0Tfi2U03a11dae7a0WBrf2
     private final String ACCESS_TOKEN = "2.00K2RpoBg2fUkD576432a2ab0vDMau";
+
+
