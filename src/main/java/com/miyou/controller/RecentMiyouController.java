@@ -3,8 +3,8 @@ package com.miyou.controller;
 import com.miyou.service.RecentMiyouService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import weibo4j.model.User;
 
@@ -31,13 +31,13 @@ public class RecentMiyouController {
     RecentMiyouService recentMiyouService;
 
 
-    @RequestMapping(value = "/user")
-    public ModelAndView getIntimacyFriends(@RequestParam("uid") String uid, HttpServletRequest request, HttpServletResponse response) {
+    @RequestMapping(value = "/user/{uid}")
+    public ModelAndView getIntimacyFriends(@PathVariable("uid") String uid, HttpServletRequest request, HttpServletResponse response) {
         ModelAndView modelAndView = new ModelAndView();
         String currentUserId = uid;
         long start = System.currentTimeMillis();
         List<User> friendList = recentMiyouService.getMutualFriendsByCount(currentUserId, INTIMACY + HALFINTIMACY);
-        System.out.println("耗费时间： "+(System.currentTimeMillis()-start));
+        System.out.println("耗费时间： " + (System.currentTimeMillis() - start));
         List<User> intimacyFriendList = null;
         List<User> halfIntimacyFriendList = null;
         if (friendList != null) {

@@ -14,8 +14,8 @@
     <title>hello,miyou</title>
 </head>
 <body>
-<div id="way" style="">
-    亲密朋友：
+<div id="full" style="">
+    <p style="color: red; font-size: 22px;">亲密朋友：</p>
     <c:if test="${intimacyFriendList!=null}">
         <c:forEach var="intimacyFriend" items="${intimacyFriendList}">
             <p style="display: inline-block;"><a href="" target="_blank"><img alt="" style="" src="${intimacyFriend.profileImageUrl}"></a>
@@ -25,8 +25,8 @@
     </c:if>
 </div>
 
-<div id="way2" style="">
-    半熟朋友：
+<div id="half" style="">
+    <p style="color: red; font-size: 22px;">半熟朋友：</p>
     <c:if test="${halfIntimacyFriendList!=null}">
         <c:forEach var="halfIntimacyFriend" items="${halfIntimacyFriendList}">
             <p style="display: inline-block;"><a href="" target="_blank"><img alt="" style=""  src="${halfIntimacyFriend.profileImageUrl}"></a>

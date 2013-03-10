@@ -22,10 +22,12 @@ import java.util.concurrent.*;
 
 @Service("RecentMiyouService")
 public class RecentMiyouServiceImp implements RecentMiyouService {
-
+    //2.00000xCq0lQxAK7287214febicBx3B
+    //2.00K2RpoBUfU9QB7d8acaec42Ap9LlB
     private final String ACCESS_TOKEN = "2.00K2RpoBUfU9QB7d8acaec42Ap9LlB";
 
-    private final int DEFAULT_COUNT = 100;//使用新浪微博API批量接口默认置为至多100条
+    private final int DEFAULT_COUNT = 150;//是用新浪微博API批量接口，默认最多150条
+
 
 
     /**
@@ -40,7 +42,9 @@ public class RecentMiyouServiceImp implements RecentMiyouService {
         try {
             UserWapper userWapper = fm.getFriendsBilateral(currentUserId, DEFAULT_COUNT);
 
+            long start = System.currentTimeMillis();
             Map<User, Integer> friendMapping = getFriendMapping(currentUserId, userWapper.getUsers());
+            System.out.println("takes time: "+(System.currentTimeMillis()-start)+" ms");
             Set<Map.Entry<User, Integer>> entry = friendMapping.entrySet();
             List<Map.Entry<User, Integer>> totalMutualFriend = new ArrayList<Map.Entry<User, Integer>>(entry);
             if (totalMutualFriend == null) return null;
@@ -49,10 +53,6 @@ public class RecentMiyouServiceImp implements RecentMiyouService {
                     return ((Comparable) ((Map.Entry<User, Integer>) o2).getValue()).compareTo(((Map.Entry<User, Integer>) o1).getValue());
                 }
             }); //按照相同互粉好友的个数从大到小排序
-            //for test
-//            for (Map.Entry<User, Integer> entry1 : totalMutualFriend) {
-//                System.out.println("userId: " + entry1.getKey().getScreenName() + "  count: " + entry1.getValue());
-//            }
             List<User> mutualFriend = new ArrayList<User>();
             for (int i = 0; i < count && i < totalMutualFriend.size(); i++) {
                 mutualFriend.add(totalMutualFriend.get(i).getKey());
@@ -80,13 +80,13 @@ public class RecentMiyouServiceImp implements RecentMiyouService {
         CompletionService completionService = new ExecutorCompletionService(executor);
         for (int i = 0; i < friendCount; i++) {
             final int num = i;
-            completionService.submit(new Callable() {
+            completionService.submit(new Callable<UserDto>() {
                 @Override
                 public UserDto call() throws Exception {
                     try {
                         User myfriend = myfriends.get(num);
                         Integer matchFriendCount = matchCommonFriends(myfriends, myfriend.getId());
-                        System.out.println("Thread:" + Thread.currentThread() + " userName:" + myfriend.getScreenName() + " matchCount:" + matchFriendCount);
+                        System.out.println("Thread:" + Thread.currentThread().getName() + " userName:" + myfriend.getScreenName() + " matchCount:" + matchFriendCount);
                         UserDto myFriendDto = new UserDto();
                         myFriendDto.setUser(myfriend);
                         myFriendDto.setCount(matchFriendCount);
@@ -100,7 +100,6 @@ public class RecentMiyouServiceImp implements RecentMiyouService {
 
         }
 
-
         for (int i = 0; i < friendCount; i++) {
             Future<UserDto> future = null;
             try {
@@ -109,15 +108,14 @@ public class RecentMiyouServiceImp implements RecentMiyouService {
                     UserDto myFriendDto = future.get(60, TimeUnit.SECONDS);
                     intimacyFriendsMapping.put(myFriendDto.getUser(), myFriendDto.getCount());
                 } catch (ExecutionException e) {
-
+                    e.printStackTrace();
                 } catch (TimeoutException e) {
-
+                    e.printStackTrace();
                 }
             } catch (InterruptedException e) {
-
+                e.printStackTrace();
             }
         }
-
         return intimacyFriendsMapping;
     }
 
@@ -161,16 +159,7 @@ public class RecentMiyouServiceImp implements RecentMiyouService {
         return count;
     }
 
-    public static void main(String[] args) {
-        //uid=1667171020
-        String access_token = "2.00K2RpoBUfU9QB7d8acaec42Ap9LlB";
-        String uid = "1667171020";
-        RecentMiyouService recentMiyouService = new RecentMiyouServiceImp();
-        List<User> recentMiyou = recentMiyouService.getMutualFriendsByCount(uid, 50);
-        for (User user : recentMiyou) {
-            System.out.println(user.getScreenName());
-        }
-    }
+
 
 }
 
